@@ -57,10 +57,25 @@ a {
 }
 
 .conteiner {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+/* mobile style */
+ 
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+  /* tablet style */
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  /* // desktop style  */
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 /* Оформление */
@@ -117,13 +132,18 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 568px;
-  height: 995px; 
+  width: 280px;
+  height: 990px;
   background: #fcfcfc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  @media screen and (min-width:768px) {
+    width: 568px;
+  height: 995px; 
+  }
 
 
 }
@@ -273,6 +293,7 @@ a {
   display: flex;
   text-align: center;
 }
+
 
 .register-form__input {
   width: 368px;
